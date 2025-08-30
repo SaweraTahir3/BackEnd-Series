@@ -1,0 +1,18 @@
+{
+  "name": "backend-series",
+  "version": "1.0.0",
+  "description": "This is my backend series ",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "node",
+    "backend"
+  ],
+  "author": "Sawera Tahir",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
