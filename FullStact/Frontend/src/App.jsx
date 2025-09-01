@@ -4,7 +4,6 @@ import './App.css'
 import axios from "axios"
 
 
-
 function App() {
   const [data, setData] = useState([])
 
@@ -18,7 +17,7 @@ function App() {
       .catch((error) => {
         console.log(error);
       })
-  })
+  },[])
 
   return (
     <>
@@ -28,17 +27,17 @@ function App() {
 
       {
 
-        data.map((datas) => {
+        data.map((datas) => (
 
           <div key={datas.id}>
-            <h3>
-              {datas.course}
-            </h3>
-            <h4>d{datas.paid}</h4>
+            <h3>{datas.course}</h3>
+            <h4>{datas.paid}</h4>
             <h5>{datas.duration}</h5>
           </div>
-        })
-      }
+        ))
+        }
+      
+
 
     </>
   )
