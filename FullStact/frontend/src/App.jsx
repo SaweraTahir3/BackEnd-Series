@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from 'react'
 import './App.css'
 import axios from "axios"
@@ -8,16 +7,17 @@ function App() {
   const [data, setData] = useState([])
 
   useEffect(() => {
-    axios.get('/api/data')
 
+    axios.get('/api/data')
       .then((response) => {
+      console.log(response.data); 
         setData(response.data)
       })
 
       .catch((error) => {
         console.log(error);
       })
-  },[])
+  } )
 
   return (
     <>
@@ -27,10 +27,11 @@ function App() {
 
       {
 
-        data.map((datas) => (
+        data.map((datas , index) => (
 
           <div key={datas.id}>
-            <h3>{datas.course}</h3>
+            <h2>{datas.Course}</h2>
+            <h3>{datas.name}</h3>
             <h4>{datas.paid}</h4>
             <h5>{datas.duration}</h5>
           </div>
