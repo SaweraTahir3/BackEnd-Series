@@ -3,17 +3,17 @@ import mongoose from "mongoose"
 const productSchema = new mongoose.schema({
 
 name : {
-type : string,
+type : String,
 required: true ,
 },
 
 description: {
-type : string,
+type : String,
 required: true ,
 },
 
 productImage :{
-type : string,
+type : String,
 }, 
 
 
