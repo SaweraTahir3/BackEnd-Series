@@ -39,7 +39,8 @@ required: true ,
 
 status: {
 type: String,
-enum : 
+enum : ["PENDING", "CANCELLED", "DELIVERED"],
+ default: "PENDING",
 
 
 } , {timestamps : true)
