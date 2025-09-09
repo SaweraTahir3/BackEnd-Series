@@ -8,4 +8,4 @@ const medicalRecordSchema = new mongoose.Schema({
 
 },{timestamps : true})
 
-export const medical = mongoose.model("medical" , medicalRecordSchema).
+export const Medical = mongoose.model("Medical" , medicalRecordSchema).
