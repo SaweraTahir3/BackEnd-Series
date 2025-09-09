@@ -9,15 +9,8 @@ lowercase : true,
 }
 
 
-
-
 },{timestamps : true})
 
-export const medical = mongoose.model("medical" , medicalRecordSchema)
-
-
-
-} , {timestamps: true})
 
 
 export const Patient = mongoose.model("Patient" , patientSchema )
