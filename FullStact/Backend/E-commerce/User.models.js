@@ -21,4 +21,4 @@ required: true ,
 } , {timestamp: true})
 
 
-export const User =  mongoose.model("User" UserSchma)
+export const User =  mongoose.model("User", UserSchma)
