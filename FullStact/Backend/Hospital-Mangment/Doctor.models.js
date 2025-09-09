@@ -13,4 +13,4 @@ cons doctorSchema = new mongoose.schema({
 
 
 
-export const doctor = mongoose.model("doctor" , doctorSchema)
+export const Doctor = mongoose.model("Doctor" , doctorSchema)
