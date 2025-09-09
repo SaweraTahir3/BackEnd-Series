@@ -43,4 +43,4 @@ ref:"User" ,
 }, {timestamps: true})
 
 
-export const products  mongoose.model("products" , productSchema)
+export const products = mongoose.model("products" , productSchema)
