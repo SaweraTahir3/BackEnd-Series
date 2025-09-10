@@ -28,8 +28,7 @@ type : mongoose.Schema.Types.ObjecTId ,
 ref : "Hospital", 
 
 }
-]
-
+],
 
 } , {timestamps : true})
 
