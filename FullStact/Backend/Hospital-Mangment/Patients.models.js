@@ -29,7 +29,7 @@ required : true,
 
 gender:{
 type : String,
-enum:['M' , 'F' , 'o']
+enum:['M' , 'F' , 'o'],
 required : true, 
 },
 
