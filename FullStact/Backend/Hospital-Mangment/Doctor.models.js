@@ -24,7 +24,7 @@ default: 0
 
 workInHospital : [
 {
-type : mongoose.Schema Types.ObjecTId ,
+type : mongoose.Schema.Types.ObjecTId ,
 ref : "Hospital", 
 
 }
